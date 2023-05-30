@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Miel Activa</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <div class="container-nav">
+        <nav class="navbar">
+            <a href="La Miel Activa.html" class="brand">La Miel Activa</a>
+            <ul class="nav-links">
+                <li><a href="La Miel Activa.html">Inicio</a></li>
+                <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="Anunciantes.html">Anunciantes</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </div>
+
+    <div class="container-radio">
+        <div class="centered-container">
+            <audio id="reproductor-audio" controls>
+                <source src="emisora1.mp3" type="audio/mpeg">
+            </audio>
+            
+            <select id="emisoras" onchange="cambiarEmisora()">
+                <option value="https://servers58.com/proxy/dulce961/stream">Dulce 96.1 FM</option>
+                <option value="https://stream-43.zeno.fm/9cn68534py8uv">Radio Misión 94.5 FM</option>
+                <option value="http://cp2.lorini.net:2010/RadioMinuto790" streamType="mp3">Radio Minuto 790 AM</option>
+                <option value="http://cp2.lorini.net:2010/RadioMinuto106" streamType="mp3">Radio Minuto 106.1 FM</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container-widgets">
+        <!-- ExchangeMonitor.net Widgets -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://exchangemonitor.net/js/script.widgets-0.5.js"></script>
+        <script type="text/javascript">ExchangeMonitorWidgetUnique("ve","bcv","360px","light",false);</script>
+        <div class="exchangemonitor-widget-unique ve bcv">
+            <a class="exchangemonitor-widget-container" href="https://exchangemonitor.net/estadisticas/ve/bcv" target="_blank">
+                <div class="exchangemonitor-widget-box"></div>
+            </a>
+        </div>
+        <!-- ExchangeMonitor.net Widgets -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://exchangemonitor.net/js/script.widgets-0.5.js"></script>
+        <script type="text/javascript">ExchangeMonitorWidgetUnique("ve","monitor-dolar","360px","light",false);</script>
+        <div class="exchangemonitor-widget-unique ve monitor-dolar">
+            <a class="exchangemonitor-widget-container" href="https://exchangemonitor.net/estadisticas/ve/monitor-dolar" target="_blank">
+                <div class="exchangemonitor-widget-box"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="calculator">
+        <input type="number" id="dollarInput" placeholder="Valor del $">
+        <input type="number" id="amountInput" placeholder="Monto de conversión">
+        <button onclick="calculate()">Calcular</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="about-section">
+        <div class="column">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+                En <strong>La Miel Activa</strong>, nos especializamos en proporcionarte una herramienta precisa y confiable para convertir dólares a bolívares venezolanos. Nuestra misión es simplificar tus cálculos financieros al brindarte acceso a las tasas de cambio actualizadas en tiempo real tanto del Monitor Dolar como del Banco Central de Venezuela (BCV).
+            </p>
+            <p>
+                Con nuestra calculadora de conversión de dólares a bolívares, puedes obtener al instante el equivalente en bolívares de una cantidad en dólares, utilizando los datos actualizados del promedio del Monitor Dolar y las tasas del BCV. Ya sea que necesites realizar transacciones internacionales, planificar tu presupuesto o simplemente estar al tanto de las tasas de cambio actuales, nuestra herramienta está diseñada para ayudarte.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Anunciantes</h2>
+            <p>
+                Si estás interesado en anunciarte en nuestro sitio web, contáctanos para conocer las opciones disponibles. Ofrecemos espacios publicitarios efectivos y adaptados a tus necesidades comerciales. Llega a una amplia audiencia interesada en el mercado de divisas y maximiza el alcance de tu marca con La Miel Activa.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes alguna pregunta, sugerencia o comentario? ¡Nos encantaría saber de ti! Puedes comunicarte con nosotros a través del WhatsApp +584161200822. Estamos disponibles para ayudarte y responder a tus inquietudes.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

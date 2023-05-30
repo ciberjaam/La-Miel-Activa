@@ -1,0 +1,184 @@
+body {
+    background-color: #f3f2f2;
+}
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button-menu-toggle {
+    display: none;
+  }
+  
+  .container-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 1%;
+  }
+  
+  .centered-container {
+    text-align: center;
+  }
+  
+  .container-widgets {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    flex-wrap: wrap;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+  
+  .calculator input[type="number"] {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .calculator #result {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .calculator button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(131, 224, 127);
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 2% 0;
+  }
+  
+  .about-section .column {
+    flex-basis: 33.33%;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 220px;
+    background-color: white;
+    margin: 10px;
+    
+    
+  }
+  
+  .about-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container-radio,
+    .container-widgets {
+      max-width: 100%;
+    }
+  
+    .container-radio {
+      height: 30vh;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20, 20, 20, 0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap: 70px;
+      font-size: 40px;
+    }
+  
+    .about-section .column {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+/* estilos para pantallas con ancho máximo de 767px */
+
+@media (max-width: 767px) {
+    header {
+        background-color: #333;
+    }
+  }
+  /* cambia el tamaño de fuente del texto de navegación
+   a 16 píxeles en pantallas con un ancho máximo de 767 píxeles. */
+
+  @media (max-width: 767px) {
+    nav {
+        font-size: 16px;
+    }
+  }
+/* ajusta el ancho del encabezado a 1200 píxeles 
+en pantallas con un ancho mínimo de 1200 píxeles. */
+
+  @media (min-whidth: 1200px) {
+    header {
+        width: 1200px;
+    }
+  }  
