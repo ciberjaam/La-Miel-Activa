@@ -1,0 +1,125 @@
+<!-- SolicitudAnunciantes.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Anunciantes</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-nav">
+        <nav class="navbar">
+            <a href="Inicio.html" class="brand">La Miel Activa</a>
+            <ul class="nav-links">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="Anunciantes.html">Anunciate</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </div>
+    
+    <div class="form-container">
+        <h2>Solicitud para ser Anunciante</h2>
+        <form id="solicitud-form" action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <span id="nombre-error" class="error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error"></span>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <span id="telefono-error" class="error"></span>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+            <span id="empresa-error" class="error"></span>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <span id="mensaje-error" class="error"></span>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('solicitud-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Validar el formulario antes de enviarlo
+            if (validarFormulario()) {
+                // Enviar el formulario
+                this.submit();
+            }
+        });
+
+        function validarFormulario() {
+            let nombre = document.getElementById('nombre').value;
+            let email = document.getElementById('email').value;
+            let telefono = document.getElementById('telefono').value;
+            let empresa = document.getElementById('empresa').value;
+            let mensaje = document.getElementById('mensaje').value;
+
+            let nombreError = document.getElementById('nombre-error');
+            let emailError = document.getElementById('email-error');
+            let telefonoError = document.getElementById('telefono-error');
+            let empresaError = document.getElementById('empresa-error');
+            let mensajeError = document.getElementById('mensaje-error');
+
+            let valido = true;
+
+            // Validar cada campo individualmente
+            if (nombre.trim() === '') {
+                nombreError.textContent = 'Por favor, ingresa tu nombre';
+                valido = false;
+            } else {
+                nombreError.textContent = '';
+            }
+
+            if (email.trim() === '') {
+                emailError.textContent = 'Por favor, ingresa tu email';
+                valido = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (telefono.trim() === '') {
+                telefonoError.textContent = 'Por favor, ingresa tu teléfono';
+                valido = false;
+            } else {
+                telefonoError.textContent = '';
+            }
+
+            if (empresa.trim() === '') {
+                empresaError.textContent = 'Por favor, ingresa tu empresa';
+                valido = false;
+            } else {
+                empresaError.textContent = '';
+            }
+
+            if (mensaje.trim() === '') {
+                mensajeError.textContent = 'Por favor, ingresa tu mensaje';
+                valido = false;
+            } else {
+                mensajeError.textContent = '';
+            }
+
+            return valido;
+        }
+    </script>
+</body>
+</html>
