@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Miel Activa</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>/* Estilos para la sección de contacto */
+        .column {
+          text-align: center;
+          padding: 20px;
+          background-color: white;
+          margin-top: 20px;
+        }
+        
+        .column h2 {
+          margin-bottom: 20px;
+        }
+        
+        .contact-info {
+          list-style-type: none;
+          padding: 0;
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: wrap; /* Agregamos flex-wrap para permitir el ajuste automático a varias filas */
+          justify-content: center; /* Centramos los elementos horizontalmente */
+          align-items: center; /* Alineamos los elementos verticalmente en la misma línea de base */
+        }
+        
+        .contact-info li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          justify-content: center;
+        }
+        
+        .contact-info img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+        
+        .contact-info a {
+          color: #333;
+          text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+          text-decoration: underline;
+        }
+        
+        </style>
 </head>
 <body>
     <div class="container-nav">
@@ -21,7 +66,35 @@
         <button class="button-menu-toggle">Menu</button>
     </div>
 
+    <div class="main-content">
+        <div class="column">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes alguna pregunta, sugerencia o comentario? ¡Nos encantaría saber de ti! Puedes comunicarte con nosotros de las siguientes maneras:
+            </p>
+            <ul class="contact-info">
+                <li>
+                    <img src="img/telefono.png" alt="Icono de Llamadas">
+                    Llamar: <a href="tel:+584120585965">04120585965</a>
+                </li>
+                <li>
+                    <img src="img/whatsapp.png" alt="Icono de WhatsApp">
+                    Enviar Msj: <a href="https://wa.link/ynrzpc">+584120585965</a>
+                </li>
+                <li>
+                    <img src="img/facebook.png" alt="Icono de Facebook">
+                    Facebook: <a href="https://www.facebook.com/tu-pagina">Pronto...</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     
+    <footer>
+        <div class="container">
+          <div class="left footer-text">© 2023 La Miel Activa. Todos los derechos reservados.</div>
+          <div class="right footer-text">Desarrollado por Angel Antequera</div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

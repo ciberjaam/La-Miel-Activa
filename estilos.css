@@ -1,175 +1,178 @@
+/* Estilos generales del formulario */
 body {
-    background-color: #f3f2f2;
+  background-color: #f3f2f2;
+  margin-bottom: 60px; /* Añade un margen inferior para dar espacio al footer */
 }
-.container-nav {
-    display: flex;
-    padding: 10px;
-    height: 50px;
-    background-color: black;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .brand {
-    display: flex;
-    align-items: center;
-  }
-  
-  li>a {
-    padding: 8px 24px;
-  }
-  
-  li {
-    list-style-type: none;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .button-menu-toggle {
-    display: none;
-  }
-  
-  .container-radio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    max-width: 300px;
-    margin: 0 auto;
-    padding-top: 1%;
-  }
-  
-  .centered-container {
-    text-align: center;
-  }
-  
-  .container-widgets {
-    display: flex;
-    justify-content: center;
-    padding-top: 1%;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 150px;
-    width: 300px;
-    margin: 0 auto;
-    padding-top: 3%;
-  }
-  
-  .calculator input[type="number"] {
-    text-align: center;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 5px;
-  }
-  
-  .calculator #result {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .calculator button {
-    margin-top: 10px;
-    width: 100%;
-    padding: 8px;
-    background-color: rgb(131, 224, 127);
-  }
-  
-  .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding: 2% 0;
-  }
-  
-  .about-section .column {
-    flex-basis: 33.33%;
-    padding: 0 20px;
-    text-align: center;
-    max-width: 220px;
-    background-color: white;
-    margin: 10px;
-    
-    
-  }
-  
-  .about-section h2 {
-    margin-bottom: 10px;
-  }
 
-  #carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding-top: 20px;
-  }
-  
-  #carousel {
-    display: flex;
-    justify-content: space-between;
-    transform: translateX(0);
-    transition: transform 0.5s ease;
-    gap: 100px;
-  }
-  
-  .banner {
-    width: calc(35% / 1);
-    flex-shrink: 0;
-    position: relative;
-  }
-  
-  .banner img {
-    max-width: 100%;
-    height: auto;
-    filter: brightness(100%);
-    transition: filter 0.5s ease;
-    align-items: center;
-  }
-  
-  .banner.next img,
-  .banner.prev img {
-    filter: brightness(60%);
-  }
-  
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    padding: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-  
-  #prevBtn {
-    left: 10px;
-  }
-  
-  #nextBtn {
-    right: 10px;
-  }
-  
-  /* Estilos generales del formulario */
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+.container-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 1%;
+  position: relative; /* Añade posición relativa para el contenedor del reproductor */
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.container-widgets {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.calculator input[type="number"] {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.calculator #result {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.calculator button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(131, 224, 127);
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 2% 0;
+}
+
+.about-section .column {
+  flex-basis: 33.33%;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 220px;
+  background-color: white;
+  margin: 10px;
+}
+
+.about-section h2 {
+  margin-bottom: 10px;
+}
+
+#carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  z-index: -1;
+}
+
+#carousel {
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  gap: 100px;
+}
+
+.banner {
+  width: calc(35% / 1);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(100%);
+  transition: filter 0.5s ease;
+  align-items: center;
+}
+
+.banner.next img,
+.banner.prev img {
+  filter: brightness(60%);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+/* Estilos generales del formulario */
 .form-container {
   max-width: 400px;
   margin: 0 auto;
@@ -177,6 +180,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f5f5f5;
+  margin-top: 20px;
 }
 
 h2 {
@@ -215,72 +219,92 @@ button[type="submit"] {
   font-size: 14px;
   margin-bottom: 10px;
 }
-  
-  @media (max-width: 768px) {
-    .container-radio,
-    .container-widgets {
-      max-width: 100%;
-    }
-  
-    .container-radio {
-      height: 30vh;
-    }
-  
-    .nav-links {
-      display: none;
-    }
-  
-    .button-menu-toggle {
-      display: block;
-      background-color: white;
-      border: none;
-      border-radius: 50px;
-      padding: 0 24px;
-      font-family: monospace;
-      font-weight: bold;
-      font-size: 20px;
-    }
-  
-    .nav-links.nav-links-responsive {
-      position: absolute;
-      display: flex;
-      background-color: rgba(20, 20, 20, 0.95);
-      width: 100%;
-      height: 100%;
-      top: 70px;
-      left: 0;
-      flex-direction: column;
-      padding-top: 200px;
-      align-items: center;
-      gap: 70px;
-      font-size: 40px;
-    }
-  
-    .about-section .column {
-      flex-basis: 100%;
-      margin-bottom: 30px;
-    }
-  }
-/* estilos para pantallas con ancho máximo de 767px */
 
+/* Estilos para el footer */
+footer {
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-text span {
+  color: #888888;
+}
+
+@media (max-width: 768px) {
+  .container-radio,
+  .container-widgets {
+    max-width: 100%;
+  }
+
+  .container-radio {
+    height: 30vh;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 60px;
+    font-size: 35px;
+    z-index: 1; /* Asegura que el menú esté en el frente */
+  }
+
+  .about-section .column {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Estilos para pantallas con ancho máximo de 767px */
 @media (max-width: 767px) {
-    header {
-        background-color: #333;
-    }
+  header {
+    background-color: #333;
   }
-  /* cambia el tamaño de fuente del texto de navegación
-   a 16 píxeles en pantallas con un ancho máximo de 767 píxeles. */
+}
 
-  @media (max-width: 767px) {
-    nav {
-        font-size: 16px;
-    }
+/* Cambia el tamaño de fuente del texto de navegación
+a 16 píxeles en pantallas con un ancho máximo de 767 píxeles. */
+@media (max-width: 767px) {
+  nav {
+    font-size: 16px;
   }
-/* ajusta el ancho del encabezado a 1200 píxeles 
+}
+
+/* Ajusta el ancho del encabezado a 1200 píxeles 
 en pantallas con un ancho mínimo de 1200 píxeles. */
-
-  @media (min-whidth: 1200px) {
-    header {
-        width: 1200px;
-    }
-  }  
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+}

@@ -3,12 +3,16 @@ document.querySelector("button.button-menu-toggle")
            document.querySelector(".nav-links").
                       classList.toggle("nav-links-responsive")})
 
+ // Función para cambiar la emisora cuando se selecciona una opción en el <select>
  function cambiarEmisora() {
- var emisorasDropdown = document.getElementById("emisoras");
- var reproductorAudio = document.getElementById("reproductor-audio");
-                      
-var emisoraSeleccionada = emisorasDropdown.value;
-reproductorAudio.src = emisoraSeleccionada;
+  var reproductor = document.getElementById("reproductor-audio");
+  var emisoraSeleccionada = document.getElementById("emisoras").value;
+  var source = document.createElement("source");
+  source.src = emisoraSeleccionada;
+  source.type = "audio/mpeg";
+  reproductor.innerHTML = ""; // Eliminar el contenido actual del reproductor
+  reproductor.appendChild(source);
+  reproductor.load();
 }
                       
 function calculate() {
