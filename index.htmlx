@@ -12,9 +12,9 @@
 <body>
     <div class="container-nav">
         <nav class="navbar">
-            <a href="Inicio.html" class="brand">La Miel Activa</a>
+            <a href="index.html" class="brand">La Miel Activa</a>
             <ul class="nav-links">
-                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
                 <li><a href="Anunciantes.html">Anunciate</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
