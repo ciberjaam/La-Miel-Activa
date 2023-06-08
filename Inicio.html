@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>La Miel Activa</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
+
 <body>
     <div class="container-nav">
         <nav class="navbar">
@@ -22,49 +24,46 @@
     </div>
 
     <div class="main-content">
-        <div id="carousel-container">
-            <div id="carousel">
-                <div class="banner">
-                    <a href="enlace1.html">
-                        <img src="img/imagen1.png" alt="Banner 1">
-                        <div class="caption">Texto del banner 1</div>
-                    </a>
-                </div>
-                <div class="banner">
-                    <a href="enlace2.html">
-                        <img src="img/imagen2.png" alt="Banner 2">
-                        <div class="caption">Texto del banner 2</div>
-                    </a>
-                </div>
-                <div class="banner">
-                    <a href="enlace3.html">
-                        <img src="img/imagen3.png" alt="Banner 3">
-                        <div class="caption">Texto del banner 3</div>
-                    </a>
-                </div>
-                <div class="banner">
-                    <a href="enlace4.html">
-                        <img src="img/imagen4.png" alt="Banner 3">
-                        <div class="caption">Texto del banner 4</div>
-                    </a>
-                </div>
+        <div id="slider" class="slider-container">
+            <div class="slider-item">
+                <a href="enlace1.html">
+                    <img src="img/imagen1.png" alt="Banner 1">
+                </a>
             </div>
-            <div id="prevBtn" class="nav-btn"><</div>
-            <div id="nextBtn" class="nav-btn">></div>
+            <div class="slider-item">
+                <a href="https://sites.google.com/view/karaokeciberjaam/inicio">
+                    <img src="img/imagen2.png" alt="Banner 2">
+                </a>
+            </div>
+            <div class="slider-item">
+                <a href="enlace3.html">
+                    <img src="img/imagen3.png" alt="Banner 3">
+                </a>
+            </div>
+            <div class="slider-item">
+                <a href="enlace4.html">
+                    <img src="img/imagen4.png" alt="Banner 4">
+                </a>
+            </div>
+            <div id="prevBtn" class="nav-btn">&lt;</div>
+            <div id="nextBtn" class="nav-btn">&gt;</div>
         </div>
+    </div>
 
+    <div class="radio-widgets-calculator">
         <div class="container-radio">
             <div class="centered-container">
                 <audio id="reproductor-audio" controls>
-                    <source src="emisora1.mp3" type="audio/mpeg">
+                    <source src="https://servers58.com/proxy/dulce961/stream" type="audio/mpeg">
                 </audio>
-
-                <select id="emisoras" onchange="cambiarEmisora()">
-                    <option value="https://servers58.com/proxy/dulce961/stream">Dulce 96.1 FM</option>
-                    <option value="https://stream-43.zeno.fm/9cn68534py8uv">Radio Misión 94.5 FM</option>
-                    <option value="http://cp2.lorini.net:2010/RadioMinuto790" streamType="mp3">Radio Minuto 790 AM</option>
-                    <option value="http://cp2.lorini.net:2010/RadioMinuto106" streamType="mp3">Radio Minuto 106.1 FM</option>
-                </select>
+                <div class="container-emisoras">
+                    <select id="emisoras" onchange="cambiarEmisora()">
+                        <option value="https://servers58.com/proxy/dulce961/stream">Dulce 96.1 FM</option>
+                        <option value="https://stream-43.zeno.fm/9cn68534py8uv">Radio Misión 94.5 FM</option>
+                        <option value="http://cp2.lorini.net:2010/RadioMinuto790">Radio Minuto 790 AM</option>
+                        <option value="http://cp2.lorini.net:2010/RadioMinuto106">Radio Minuto 106.1 FM</option>
+                    </select>
+                </div>
             </div>
         </div>
 
@@ -72,20 +71,26 @@
             <!-- ExchangeMonitor.net Widgets -->
             <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
             <script type="text/javascript" src="https://exchangemonitor.net/js/script.widgets-0.5.js"></script>
-            <script type="text/javascript">ExchangeMonitorWidgetUnique("ve","bcv","360px","light",false);</script>
+            <script type="text/javascript">ExchangeMonitorWidgetUnique("ve", "bcv", "360px", "light", false);</script>
             <div class="exchangemonitor-widget-unique ve bcv">
-                <a class="exchangemonitor-widget-container" href="https://exchangemonitor.net/estadisticas/ve/bcv" target="_blank">
+                <a class="exchangemonitor-widget-container" href="https://exchangemonitor.net/estadisticas/ve/bcv"
+                    target="_blank">
                     <div class="exchangemonitor-widget-box"></div>
                 </a>
             </div>
-            <!-- ExchangeMonitor.net Widgets -->
-            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-            <script type="text/javascript" src="https://exchangemonitor.net/js/script.widgets-0.5.js"></script>
-            <script type="text/javascript">ExchangeMonitorWidgetUnique("ve","monitor-dolar","360px","light",false);</script>
-            <div class="exchangemonitor-widget-unique ve monitor-dolar">
-                <a class="exchangemonitor-widget-container" href="https://exchangemonitor.net/estadisticas/ve/monitor-dolar" target="_blank">
-                    <div class="exchangemonitor-widget-box"></div>
-                </a>
+
+            <div class="widget">
+                <!-- Agrega el primer widget -->
+                <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+                <script type="text/javascript" src="https://exchangemonitor.net/js/script.widgets-0.5.js"></script>
+                <script
+                    type="text/javascript">ExchangeMonitorWidgetUnique("ve", "monitor-dolar", "360px", "light", false);</script>
+                <div class="exchangemonitor-widget-unique ve monitor-dolar">
+                    <a class="exchangemonitor-widget-container"
+                        href="https://exchangemonitor.net/estadisticas/ve/monitor-dolar" target="_blank">
+                        <div class="exchangemonitor-widget-box"></div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -95,38 +100,53 @@
             <button onclick="calculate()">Calcular</button>
             <p id="result"></p>
         </div>
+    </div>
 
-        <div class="about-section">
-            <div class="column">
-                <h2>Acerca de Nosotros</h2>
-                <p>
-                    En <strong>La Miel Activa</strong>, nos especializamos en proporcionarte una herramienta precisa y confiable para convertir dólares a bolívares venezolanos. Nuestra misión es simplificar tus cálculos financieros al brindarte acceso a las tasas de cambio actualizadas en tiempo real tanto del Monitor Dolar como del Banco Central de Venezuela (BCV).
-                </p>
-                <p>
-                    Con nuestra calculadora de conversión de dólares a bolívares, puedes obtener al instante el equivalente en bolívares de una cantidad en dólares, utilizando los datos actualizados del promedio del Monitor Dolar y las tasas del BCV. Ya sea que necesites realizar transacciones internacionales, planificar tu presupuesto o simplemente estar al tanto de las tasas de cambio actuales, nuestra herramienta está diseñada para ayudarte.
-                </p>
-            </div>
-            <div class="column">
-                <h2>Anunciantes</h2>
-                <p>
-                    Si estás interesado en anunciarte en nuestro sitio web, contáctanos para conocer las opciones disponibles. Ofrecemos espacios publicitarios efectivos y adaptados a tus necesidades comerciales. Llega a una amplia audiencia interesada en el mercado de divisas y maximiza el alcance de tu marca con La Miel Activa.
-                </p>
-            </div>
-            <div class="column">
-                <h2>Contacto</h2>
-                <p>
-                    ¿Tienes alguna pregunta, sugerencia o comentario? ¡Nos encantaría saber de ti! Puedes comunicarte con nosotros a través del WhatsApp +584161200822. Estamos disponibles para ayudarte y responder a tus inquietudes.
-                </p>
-            </div>
+    <div class="about-section">
+        <div class="column">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+                En <strong>La Miel Activa</strong>, nos especializamos en proporcionarte una herramienta precisa y
+                confiable para convertir dólares a bolívares venezolanos. Nuestra misión es simplificar tus cálculos
+                financieros al brindarte acceso a las tasas de cambio actualizadas en tiempo real tanto del Monitor
+                Dolar como del Banco Central de Venezuela (BCV).
+            </p>
+            <p>
+                Con nuestra calculadora de conversión de dólares a bolívares, puedes obtener al instante el equivalente
+                en bolívares de una cantidad en dólares, utilizando los datos actualizados del promedio del Monitor
+                Dolar y las tasas del BCV. Ya sea que necesites realizar transacciones internacionales, planificar tu
+                presupuesto o simplemente estar al tanto de las tasas de cambio actuales, nuestra herramienta está
+                diseñada para ayudarte.
+            </p>
         </div>
+        <div class="column">
+            <h2>Anunciantes</h2>
+            <p>
+                Si estás interesado en anunciarte en nuestro sitio web, contáctanos para conocer las opciones
+                disponibles. Ofrecemos espacios publicitarios efectivos y adaptados a tus necesidades comerciales. Llega
+                a una amplia audiencia interesada en el mercado de divisas y maximiza el alcance de tu marca con La Miel
+                Activa.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes alguna pregunta, sugerencia o comentario? ¡Nos encantaría saber de ti! Puedes comunicarte con
+                nosotros a través del WhatsApp +584161200822. Estamos disponibles para ayudarte y responder a tus
+                inquietudes.
+            </p>
+        </div>
+    </div>
     </div>
     <footer>
         <div class="container">
-          <div class="left footer-text">© 2023 La Miel Activa. Todos los derechos reservados.</div>
-          <div class="right footer-text">Desarrollado por Angel Antequera</div>
+            <div class="left footer-text">© 2023 La Miel Activa. Todos los derechos reservados.</div>
+            <div class="right footer-text">Desarrollado por Angel Antequera</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>

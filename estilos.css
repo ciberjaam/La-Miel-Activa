@@ -117,60 +117,57 @@ a {
   margin-bottom: 10px;
 }
 
-#carousel-container {
+.slider-container {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  text-align: center;
+  width: 100%;
   padding-top: 20px;
-  z-index: -1;
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
-#carousel {
-  display: flex;
-  justify-content: space-between;
-  transform: translateX(0);
-  transition: transform 0.5s ease;
-  gap: 100px;
+.slider-item {
+  position: relative; /* Agregamos posición relativa */
+  display: none;
 }
 
-.banner {
-  width: calc(35% / 1);
-  flex-shrink: 0;
-  position: relative;
+.slider-item:first-child {
+  display: block;
 }
 
-.banner img {
-  max-width: 100%;
+.slider-item img {
+  width: 100%;
   height: auto;
-  filter: brightness(100%);
-  transition: filter 0.5s ease;
-  align-items: center;
-}
-
-.banner.next img,
-.banner.prev img {
-  filter: brightness(60%);
 }
 
 .nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 18px;
-  padding: 10px;
-  color: white;
+  font-size: 24px;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
   cursor: pointer;
+  z-index: 1; /* Asegurar que los botones estén por encima de los slides */
 }
 
 #prevBtn {
-  left: 10px;
+  left: 0;
 }
 
 #nextBtn {
-  right: 10px;
+  right: 0;
 }
+.slider-container:hover .nav-btn {
+  opacity: 1;
+}
+
+.nav-btn {
+  /* ... */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 
 /* Estilos generales del formulario */
 .form-container {
@@ -308,3 +305,4 @@ en pantallas con un ancho mínimo de 1200 píxeles. */
     width: 1200px;
   }
 }
+
