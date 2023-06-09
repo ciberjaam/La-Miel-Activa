@@ -246,7 +246,7 @@ footer {
   }
 
   .container-radio {
-    height: 18vh;
+    height: 10vh;
   }
 
   .nav-links {
@@ -276,7 +276,7 @@ footer {
     padding-top: 200px;
     align-items: center;
     gap: 60px;
-    font-size: 35px;
+    font-size: 30px;
     z-index: 1; /* Asegura que el menú esté en el frente */
   }
 
