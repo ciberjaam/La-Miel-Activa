@@ -52,7 +52,7 @@ a {
   max-width: 300px;
   margin: 0 auto;
   padding-top: 1%;
-  background-color: rgb(167, 245, 245);
+  background-color: white;
   padding: 20px;
   border: 1px solid black;
   position: relative; /* Añade posición relativa para el contenedor del reproductor */
