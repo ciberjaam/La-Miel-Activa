@@ -44,19 +44,66 @@ a {
   display: none;
 }
 
-.container-radio {
-  max-width: 100%;
-  height: 100px; /* Cambia el valor según tus necesidades */
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.centered-container {
-  text-align: center;
+/* Estilos del contenedor principal */
+.radio-widgets-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: #f0f0f0;
+}
+
+/* Estilos del contenedor del reproductor y la lista de emisoras */
+.container-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* Estilos del reproductor de audio */
+#reproductor-audio {
+  width: 100%;
+  height: 25px;
+  background-color: #ebe8e8;
+}
+
+/* Estilos de la lista de emisoras */
+.container-emisoras {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#emisoras {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .container-widgets {
   display: flex;
   justify-content: center;
-  padding-top: 12.5%;
+  padding-top: 1%;
   flex-wrap: wrap;
   gap: 5px;
 }
@@ -65,7 +112,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
+  height: 150px;
   width: 300px;
   margin: 0 auto;
   padding-top: 3%;
@@ -73,7 +120,7 @@ a {
 
 .calculator input[type="number"] {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   padding: 5px;
 }
@@ -86,7 +133,7 @@ a {
 .calculator button {
   margin-top: 10px;
   width: 100%;
-  padding: 15px;
+  padding: 8px;
   background-color: rgb(131, 224, 127);
 }
 
@@ -115,7 +162,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 20px;
   margin: 0 auto; /* Centrar horizontalmente */
 }
 
@@ -234,10 +281,10 @@ footer {
   .container-radio,
   .container-widgets {
     max-width: 100%;
-    
   }
+
   .container-radio {
-    height: 100%;
+    height: 15vh;
   }
 
   .nav-links {
@@ -259,7 +306,7 @@ footer {
     position: absolute;
     display: flex;
     background-color: rgba(20, 20, 20, 0.95);
-    width: 90%;
+    width: 100%;
     height: 100%;
     top: 70px;
     left: 0;
@@ -267,8 +314,8 @@ footer {
     padding-top: 200px;
     align-items: center;
     gap: 60px;
-    font-size: 30px;
-    z-index: 3; /* Asegura que el menú esté en el frente */
+    font-size: 35px;
+    z-index: 1; /* Asegura que el menú esté en el frente */
   }
 
   .about-section .column {
@@ -299,4 +346,3 @@ en pantallas con un ancho mínimo de 1200 píxeles. */
     width: 1200px;
   }
 }
-
