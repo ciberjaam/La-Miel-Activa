@@ -7,10 +7,10 @@ function cambiarEmisora() {
   var reproductor = document.getElementById("reproductor-audio");
   var emisoraSeleccionada = document.getElementById("emisoras").value;
 
-  // Crear una nueva etiqueta <source> con la URL de la emisora seleccionada
-  var nuevaFuente = document.createElement("source");
-  nuevaFuente.src = emisoraSeleccionada;
-  nuevaFuente.type = "audio/mpeg";
+  // Crear una nueva etiqueta <source>
+  var source = document.createElement("source");
+  source.src = emisoraSeleccionada;
+  source.type = "audio/mpeg";
 
   // Eliminar todas las etiquetas <source> existentes dentro del reproductor
   while (reproductor.firstChild) {
@@ -18,12 +18,11 @@ function cambiarEmisora() {
   }
 
   // Agregar la nueva etiqueta <source> al reproductor
-  reproductor.appendChild(nuevaFuente);
+  reproductor.appendChild(source);
 
-  // Cargar el reproductor con la nueva fuente
+  // Cargar el reproductor
   reproductor.load();
 }
-
 
 function calculate() {
   // Obtener los valores ingresados
