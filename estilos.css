@@ -317,11 +317,12 @@ footer {
     flex-direction: column;
   }
   .container-radio,
-  .container-widgets,
   .calculator {
     max-width: 100%;
   }
-
+ .container-widgets {
+    max-width: fit-content;
+  }
   .nav-links {
     display: none;
   }
