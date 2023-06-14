@@ -52,11 +52,17 @@ a {
   padding: 20px;
 }
 
-.container-radio,
+
 .container-widgets,
 .calculator {
   flex-basis: 100%;
-  max-width: 33%;
+  max-width: 38%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.container-radio {
+  flex-basis: 100%;
+  max-width: 20%;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
@@ -85,8 +91,8 @@ a {
 
 #emisoras {
   width: 70%;
-  padding: 15px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 10px;
   text-align: center;
   margin: 0 auto; /* Centrar horizontalmente */
 }
@@ -105,16 +111,15 @@ a {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
-  
+  display: flex;
+  justify-content: center;
 }
 
 .exchangemonitor-widget-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  
+    
 }
 
 .exchangemonitor-widget-box {
@@ -136,7 +141,7 @@ input[type="number"],
 button {
   width: 100%;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
@@ -317,12 +322,11 @@ footer {
     flex-direction: column;
   }
   .container-radio,
+  .container-widgets,
   .calculator {
     max-width: 100%;
   }
- .container-widgets {
-    max-width: fit-content;
-  }
+
   .nav-links {
     display: none;
   }
