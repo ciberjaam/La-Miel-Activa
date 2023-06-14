@@ -72,6 +72,8 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  background-image: url("img/fondo\ reproductor.jpg");
+  background-size: cover;
 }
 #reproductor-audio {
   width: 100%;
@@ -92,14 +94,14 @@ a {
 #emisoras {
   width: 70%;
   padding: 10px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .container-widgets {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  background-color: #98f5c2;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -129,8 +131,8 @@ a {
 }
 
 .calculator {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -325,6 +327,12 @@ footer {
   .container-widgets,
   .calculator {
     max-width: 100%;
+  }
+  .container-radio {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-links {
