@@ -34,6 +34,9 @@ function calculate() {
     // Realizar el cálculo
     var result = dollarValue * amount;
 
+    // Limitar el resultado a dos decimales
+    result = result.toFixed(2);
+
     // Mostrar el resultado
     document.getElementById("result").innerHTML = "Resultado: " + result;
   } else {
@@ -41,6 +44,7 @@ function calculate() {
     document.getElementById("result").innerHTML = "Por favor, ingresa los valores correctos.";
   }
 }
+
 
 var currentSlide = 0;
 var slides = document.getElementsByClassName("slider-item");
