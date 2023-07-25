@@ -2,6 +2,7 @@
 body {
   background-color: #f3f2f2;
   margin-bottom: 60px;
+  margin: 0%;
   /* Añade un margen inferior para dar espacio al footer */
 }
 
@@ -38,7 +39,10 @@ ul {
   height: 50px;
   color: #000000;
 }
-
+.logo-img {
+  width: 120px; /* Ajusta el ancho según tus necesidades */
+  height: 80px; /* Ajusta la altura según tus necesidades */
+}
 
 .radio-widgets-calculator {
   display: flex;
@@ -374,11 +378,10 @@ footer {
     position: absolute;
     display: flex;
     background-color: rgba(20, 20, 20, 0.95);
-    width: 95%;
-    height: 200%;
-    top: 150px;
+    width: 100%;
+    height: 100vh;
+    top: 105px;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     z-index: 1;
     /* Asegura que el menú esté en el frente */
